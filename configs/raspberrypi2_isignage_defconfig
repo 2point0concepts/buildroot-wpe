@@ -1,6 +1,6 @@
 BR2_arm=y
 BR2_cortex_a7=y
-# BR2_ARM_EABIHF=y
+BR2_ARM_EABIHF=y
 BR2_ARM_FPU_NEON_VFPV4=y
 BR2_ARM_INSTRUCTIONS_THUMB2=y
 BR2_CCACHE=y
@@ -72,12 +72,12 @@ BR2_PACKAGE_SCREEN=y
 # BR2_TARGET_ROOTFS_TAR is not set
 
 # MODE 1 - InitramFS temporary build
-# BR2_TARGET_ROOTFS_INITRAMFS=y
-# BR2_ROOTFS_POST_IMAGE_SCRIPT="board/raspberrypi2/post-ml-image.sh"
+BR2_TARGET_ROOTFS_INITRAMFS=y
+BR2_ROOTFS_POST_IMAGE_SCRIPT="board/raspberrypi2/post-ml-image.sh"
 
 ## Uncomment for proper build
 # Filesystem / image
-BR2_TARGET_ROOTFS_EXT2=y
-BR2_TARGET_ROOTFS_EXT2_4=y
-BR2_ROOTFS_POST_BUILD_SCRIPT="board/raspberrypi2/post-build.sh"
-BR2_ROOTFS_POST_IMAGE_SCRIPT="board/raspberrypi2/post-image.sh"
+#BR2_TARGET_ROOTFS_EXT2=y
+#BR2_TARGET_ROOTFS_EXT2_4=y
+#BR2_ROOTFS_POST_BUILD_SCRIPT="board/raspberrypi2/post-build.sh"
+#BR2_ROOTFS_POST_IMAGE_SCRIPT="board/raspberrypi2/post-image.sh"
