@@ -1,0 +1,3 @@
+make clean
+make raspberrypi2_isignage_defconfig
+make
